@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Pointers  03", "Pointers  1-2\Pointers  1-2.vcxproj", "{C648FE88-D267-4D97-B184-71D380A37E2B}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "03 Pointers", "Pointers  1-2\Pointers  1-2.vcxproj", "{C648FE88-D267-4D97-B184-71D380A37E2B}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Heap 01", "Pointer 01\Pointer 01.vcxproj", "{53237CA7-2216-4271-AF7F-795431ACD3F5}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "01 Heap", "Pointer 01\Pointer 01.vcxproj", "{53237CA7-2216-4271-AF7F-795431ACD3F5}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Pointer Arithmetic 02", "Pointer Arithmetic 02\Pointer Arithmetic 02.vcxproj", "{538EE067-E115-49B6-B3FF-ABCADC070421}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "02 Pointer Arithmetic", "Pointer Arithmetic 02\Pointer Arithmetic 02.vcxproj", "{538EE067-E115-49B6-B3FF-ABCADC070421}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Compilation 04", "Compilation\Compilation.vcxproj", "{21472961-520F-4D64-B949-0DE89E8F9027}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "04 Compilation", "Compilation\Compilation.vcxproj", "{21472961-520F-4D64-B949-0DE89E8F9027}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "05 FileIO", "05 FileIO\05 FileIO.vcxproj", "{7599EA9D-448A-465E-AC22-694E4BB65ED0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,14 @@ Global
 		{21472961-520F-4D64-B949-0DE89E8F9027}.Release|x64.Build.0 = Release|x64
 		{21472961-520F-4D64-B949-0DE89E8F9027}.Release|x86.ActiveCfg = Release|Win32
 		{21472961-520F-4D64-B949-0DE89E8F9027}.Release|x86.Build.0 = Release|Win32
+		{7599EA9D-448A-465E-AC22-694E4BB65ED0}.Debug|x64.ActiveCfg = Debug|x64
+		{7599EA9D-448A-465E-AC22-694E4BB65ED0}.Debug|x64.Build.0 = Debug|x64
+		{7599EA9D-448A-465E-AC22-694E4BB65ED0}.Debug|x86.ActiveCfg = Debug|Win32
+		{7599EA9D-448A-465E-AC22-694E4BB65ED0}.Debug|x86.Build.0 = Debug|Win32
+		{7599EA9D-448A-465E-AC22-694E4BB65ED0}.Release|x64.ActiveCfg = Release|x64
+		{7599EA9D-448A-465E-AC22-694E4BB65ED0}.Release|x64.Build.0 = Release|x64
+		{7599EA9D-448A-465E-AC22-694E4BB65ED0}.Release|x86.ActiveCfg = Release|Win32
+		{7599EA9D-448A-465E-AC22-694E4BB65ED0}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
