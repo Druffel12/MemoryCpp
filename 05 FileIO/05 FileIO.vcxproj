@@ -116,6 +116,9 @@
     <Text Include="Profile.txt" />
     <Text Include="Text.txt" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Entity.h" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

@@ -1,6 +1,7 @@
 #include <iostream>
 #include <fstream>
 #include <string>
+#include 'Entity'
 
 using std::string;
 
@@ -53,122 +54,163 @@ int main()
 
 	}*/
 	
-	fstream autoCreate;
-	autoCreate.close();
+//	fstream autoCreate;
+//	autoCreate.close();
+//
+//	//closed 
+//	//1
+//	string input;
+//
+//	std::cout << "Please input the name ";
+//	std::cout << "and extension of the file you are looking for" << std::endl;
+//	
+//	std::cin >> input;
+//
+//	file.open(input);
+//
+//	if (file.fail())
+//	{
+//		std::cout << "File not found." << std::endl;
+//		return -1;
+//	}
+//	string bufferz;
+//	while (std::getline(file, bufferz))
+//	{
+//		std::cout << bufferz << std::endl;
+//	}
+//
+//	//2
+//	string name;
+//
+//	std::cout << "Who are you?" << std::endl;
+//	std::cin >> name;
+//
+//	file << std::endl << name ;
+//
+//	file.flush();
+//
+//	file.close();
+//
+//	string age;
+//
+//	std::cout << "how old are you are you?" << std::endl;
+//	std::cin >> age;
+//
+//	file << std::endl << age;
+//
+//	file.flush();
+//
+//	file.close();
+//
+//	string color;
+//
+//	std::cout << "Favorite color?" << std::endl;
+//	std::cin >> color;
+//
+//	file << std::endl << color;
+//
+//	file.flush();
+//
+//	fstream profile;
+//
+//	profile.open("Profile.txt");
+//	//open
+//	//1
+//	char block = 219;
+//	//profile.clear();
+//
+//	string buffer;
+//	while (std::getline(profile, buffer))
+//	{
+//		buffer.length();
+//		buffer[0] = block;
+//		buffer[1] = block;
+//		buffer[5] = block;
+//		buffer[8] = block;
+//		buffer[12] = block;
+//		buffer[15] = block;
+//		buffer[18] = block;
+//		buffer[21] = block;
+//		buffer[24] = block;
+//		buffer[27] = block;
+//		buffer[30] = block;
+//		buffer[34] = block;
+//		buffer[37] = block;
+//		buffer[39] = block;
+//		buffer[42] = block;
+//		buffer[46] = block;
+//		buffer[49] = block;
+//		buffer[53] = block;
+//		buffer[56] = block;
+//		buffer[58] = block;
+//		buffer[60] = block;
+//		buffer[63] = block;
+//		buffer[65] = block;
+//		buffer[68] = block;
+//		buffer[71] = block;
+//		buffer[74] = block;
+//		buffer[77] = block;
+//		buffer[79] = block;
+//		buffer[82] = block;
+//		buffer[85] = block;
+//		buffer[87] = block;
+//		buffer[90] = block;
+//		buffer[93] = block;
+//		buffer[96] = block;
+//		buffer[99] = block;
+//		buffer[102] = block;
+//		
+//
+//
+//
+//		std::cout << buffer << std::endl;
+//	}
+//
+//	
+//
+//	profile.close();
+//file.close();
 
-	//closed 
-	//1
-	string input;
+	main2();
 
-	std::cout << "Please input the name ";
-	std::cout << "and extension of the file you are looking for" << std::endl;
+	fstream entityStream;
+	entityStream.open("monsters.txt");
+
+	if (entityStream.fail())
+	{
+		std::cout << "Can't open file" << std::endl;
+
+	}
+
+	int entityCount = 0;
+	Entity entities[100];
+
+	while (true)
+	{
+		std::string buf;
+		bool entityFound = false;
+
+		while (getline(entityStream, buf))
+		{
+			if (buf[0] == '@') { break; }
+		}
+	}
+	if (!entityFound) { break;  }
+
+		// load data into the array of entities
+		Entity& curEntity = entities[entityCount];
+
+		getline(entityStream, buf);
+		curEntity.hitpoints = stof(buf);
+		getline(entityStream, buf);
+		curEntity.armor = stof(buf);
+		getline(entityStream, buf);
+		curEntity.defense = stof(buf);
+		getline(entityStream, buf);
+		curEntity.strength = stof(buf);
+		getline(entityStream, buf);
+		curEntity.luck = stof(buf);
 	
-	std::cin >> input;
-
-	file.open(input);
-
-	if (file.fail())
-	{
-		std::cout << "File not found." << std::endl;
-		return -1;
-	}
-	string bufferz;
-	while (std::getline(file, bufferz))
-	{
-		std::cout << bufferz << std::endl;
-	}
-
-	//2
-	string name;
-
-	std::cout << "Who are you?" << std::endl;
-	std::cin >> name;
-
-	file << std::endl << name ;
-
-	file.flush();
-
-	file.close();
-
-	string age;
-
-	std::cout << "how old are you are you?" << std::endl;
-	std::cin >> age;
-
-	file << std::endl << age;
-
-	file.flush();
-
-	file.close();
-
-	string color;
-
-	std::cout << "Favorite color?" << std::endl;
-	std::cin >> color;
-
-	file << std::endl << color;
-
-	file.flush();
-
-	fstream profile;
-
-	profile.open("Profile.txt");
-	//open
-	//1
-	char block = 219;
-	//profile.clear();
-
-	string buffer;
-	while (std::getline(profile, buffer))
-	{
-		buffer.length();
-		buffer[0] = block;
-		buffer[1] = block;
-		buffer[5] = block;
-		buffer[8] = block;
-		buffer[12] = block;
-		buffer[15] = block;
-		buffer[18] = block;
-		buffer[21] = block;
-		buffer[24] = block;
-		buffer[27] = block;
-		buffer[30] = block;
-		buffer[34] = block;
-		buffer[37] = block;
-		buffer[39] = block;
-		buffer[42] = block;
-		buffer[46] = block;
-		buffer[49] = block;
-		buffer[53] = block;
-		buffer[56] = block;
-		buffer[58] = block;
-		buffer[60] = block;
-		buffer[63] = block;
-		buffer[65] = block;
-		buffer[68] = block;
-		buffer[71] = block;
-		buffer[74] = block;
-		buffer[77] = block;
-		buffer[79] = block;
-		buffer[82] = block;
-		buffer[85] = block;
-		buffer[87] = block;
-		buffer[90] = block;
-		buffer[93] = block;
-		buffer[96] = block;
-		buffer[99] = block;
-		buffer[102] = block;
-		
-
-
-
-		std::cout << buffer << std::endl;
-	}
-
-	
-
-	profile.close();
-file.close();
 	while (true) {}
 
 	//Writing to a file
